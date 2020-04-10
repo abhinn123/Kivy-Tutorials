@@ -1,0 +1,29 @@
+<MyGrid>:
+    usr: usr
+    pss : pss
+
+    GridLayout:
+        size: root.width, root.height
+        cols: 1
+
+        GridLayout:
+            cols: 2
+
+            Label:
+                text:'Username: '
+
+            TextInput:
+                id: usr
+                multiline: False
+
+            Label:
+                text:'Password: '
+
+            TextInput:
+                id: pss
+                multiline: False
+
+        Button:
+            text:'Login'
+            on_release: root.login()
+
